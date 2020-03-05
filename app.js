@@ -5,7 +5,7 @@ const coins = ['KMD', 'BTC', 'LTC']
 
 const command = './mybalance.sh '
 
-for (coin in coins) {
+coins.forEach(coin => {
   child = exec(command+coin,
      function (error, stdout, stderr) {
         console.log('stdout: ' + stdout);
@@ -15,5 +15,5 @@ for (coin in coins) {
         if (error !== null) {
             console.log('exec error: ' + error);
         }
-     });
-}
+     })
+})
