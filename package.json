@@ -1,0 +1,19 @@
+{
+  "name": "mm2dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jippey67/mm2Dev.git"
+  },
+  "author": "Jeroen Walta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jippey67/mm2Dev/issues"
+  },
+  "homepage": "https://github.com/jippey67/mm2Dev#readme"
+}
