@@ -1,7 +1,7 @@
 var exec = require('child_process').exec;
 var child;
 
-const command = '../atomicDEX-API/target/debug/mybalance.sh KMD'
+const command = './mybalance.sh KMD'
 
 child = exec(command,
    function (error, stdout, stderr) {
