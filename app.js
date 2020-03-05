@@ -1,7 +1,7 @@
 var exec = require('child_process').exec;
 var child;
 
-const coins = ['KMD', 'BTC', 'LTC']
+const coins = ['KMD', 'BTC', 'LTC', 'VRSC']
 
 const command = './mybalance.sh '
 
