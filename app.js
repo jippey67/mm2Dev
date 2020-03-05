@@ -1,15 +1,19 @@
 var exec = require('child_process').exec;
 var child;
 
-const command = './mybalance.sh KMD'
+const coins = ['KMD', 'BTC', 'LTC']
 
-child = exec(command,
-   function (error, stdout, stderr) {
-      console.log('stdout: ' + stdout);
-      var obj = JSON.parse(stdout)
-      console.log(obj.address)
-      //console.log('stderr: ' + stderr);
-      // if (error !== null) {
-      //     console.log('exec error: ' + error);
-      // }
-   });
+const command = './mybalance.sh '
+
+for (coin in coins) {
+  child = exec(command+coin,
+     function (error, stdout, stderr) {
+        console.log('stdout: ' + stdout);
+        var obj = JSON.parse(stdout)
+        console.log(obj.address)
+        console.log('stderr: ' + stderr);
+        if (error !== null) {
+            console.log('exec error: ' + error);
+        }
+     });
+}
